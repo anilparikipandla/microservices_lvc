@@ -1,5 +1,7 @@
 package com.example.demo;
 
+import java.util.Arrays;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -22,8 +24,11 @@ public class UserRatingInfo {
 		return restTemplate.getForObject("http://ratings-data-service/ratingsdata/user/"+userId, UserRating.class);
 	}
 	
-//	public UserRating getFallbackuserRating(@PathVariable("userId") String userId) {
-//		return new UserRating()
-//	}
+	public UserRating getFallbackuserRating(@PathVariable("userId") String userId) {
+		UserRating userRating = new UserRating();
+		userRating.setUserId(userId);
+		userRating.setRatings(Arrays.asList(new Rating("800",0)));
+		return userRating;
+	}
 
 }
