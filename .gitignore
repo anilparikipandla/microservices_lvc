@@ -1,4 +1,4 @@
-mongoDBDatabases/
-projectOne/.metadata
-projectOne/.metadata/
+mongoDBDatabases/*
 projectOne_FeignCleintPattern.zip
+.idea/*
+projectOne/.metadata/*
