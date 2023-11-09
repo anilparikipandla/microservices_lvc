@@ -1,9 +1,0 @@
-package com.example.demo;
-
-public class MyEndPointsThree {
-
-	public MyEndPointsThree() {
-		// TODO Auto-generated constructor stub
-	}
-
-}
