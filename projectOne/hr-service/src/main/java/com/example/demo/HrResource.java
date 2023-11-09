@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/hr")
 public class HrResource {
+	// We Have changed the HR Service and Pathology service from Eureka to standalone. and used it for routing the API Gateway Pattern.
 
 	public HrResource() {
 		// TODO Auto-generated constructor stub
